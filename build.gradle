@@ -15,10 +15,8 @@ targetCompatibility = 11
 
 dependencies {
     //noinspection GradlePackageUpdate
-    testImplementation(
-            'org.junit.jupiter:junit-jupiter:5.8.1',
-            'com.codeborne:selenide:5.25.0',
-    )
+    implementation('com.codeborne:selenide:5.25.0')
+    testImplementation('org.junit.jupiter:junit-jupiter:5.8.1')
     testRuntimeOnly('org.junit.jupiter:junit-jupiter-engine:5.8.1')
 }
 
