@@ -2,26 +2,27 @@ package com.github.jjfhj;
 
 public class Tea {
 
-    String teaSetName; // Название чайного набора
-    int countOfTeaBags; // Количество чайных пакетиков
-    int countOfTeaFlavors; // Количество вкусов чая
-    int countOfBlackTeaBags; // Количество пакетиков черного чая
-    int countOfGreenTeaBags; // Количество пакетиков зеленого чая
-    int countOfHerbalTeaBags; // Количество пакетиков травяного чая
-    int countOfOolongTeaBags; // Количество пакетиков чая улун
-    int teaSetPrice; // Цена чайного набора
+    public static String commonName = "Чайный набор";
+    private String teaSetName; // Название чайного набора
+    private int countOfTeaBags; // Количество чайных пакетиков
+    private int countOfTeaFlavors; // Количество вкусов чая
+    private int countOfBlackTeaBags; // Количество пакетиков черного чая
+    private int countOfGreenTeaBags; // Количество пакетиков зеленого чая
+    private int countOfHerbalTeaBags; // Количество пакетиков травяного чая
+    private int countOfOolongTeaBags; // Количество пакетиков чая улун
+    private int teaSetPrice; // Цена чайного набора
     int discountCoupon = 100; // Скидочный купон на 100 рублей
 
     public Tea(String teaSetName, int countOfTeaBags, int countOfTeaFlavors, int countOfBlackTeaBags,
                int countOfGreenTeaBags, int countOfHerbalTeaBags, int countOfOolongTeaBags, int teaSetPrice) {
-        this.teaSetName = teaSetName; // Название чайного набора
-        this.countOfTeaBags = countOfTeaBags; // Количество чайных пакетиков
-        this.countOfTeaFlavors = countOfTeaFlavors; // Количество вкусов чая
-        this.countOfBlackTeaBags = countOfBlackTeaBags; // Количество пакетиков черного чая
-        this.countOfGreenTeaBags = countOfGreenTeaBags; // Количество пакетиков зеленого чая
-        this.countOfHerbalTeaBags = countOfHerbalTeaBags; // Количество пакетиков травяного чая
-        this.countOfOolongTeaBags = countOfOolongTeaBags; // Количество пакетиков чая улун
-        this.teaSetPrice = teaSetPrice; // Цена чайного набора
+        this.teaSetName = teaSetName;
+        this.countOfTeaBags = countOfTeaBags;
+        this.countOfTeaFlavors = countOfTeaFlavors;
+        this.countOfBlackTeaBags = countOfBlackTeaBags;
+        this.countOfGreenTeaBags = countOfGreenTeaBags;
+        this.countOfHerbalTeaBags = countOfHerbalTeaBags;
+        this.countOfOolongTeaBags = countOfOolongTeaBags;
+        this.teaSetPrice = teaSetPrice;
     }
 
     public void sayNameAndCompositionOfTeaSet() {

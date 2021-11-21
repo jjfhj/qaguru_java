@@ -3,6 +3,8 @@ package com.github.jjfhj;
 public class Main {
 
     public static void main(String[] args) {
+        System.out.println(Tea.commonName);
+
         Tea greenfield = new Tea("Greenfield", 60, 12, 35,
                 15, 5, 5, 425);
         greenfield.sayNameAndCompositionOfTeaSet();
