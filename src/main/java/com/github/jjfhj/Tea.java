@@ -1,6 +1,7 @@
 package com.github.jjfhj;
 
 public class Tea {
+
     String teaSetName; // Название чайного набора
     int countOfTeaBags; // Количество чайных пакетиков
     int countOfTeaFlavors; // Количество вкусов чая
