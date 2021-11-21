@@ -3,6 +3,7 @@ package com.github.jjfhj;
 public class Main {
 
     public static void main(String[] args) {
+        Tea.sayClassName();
         System.out.println(Tea.commonName + "\n");
 
         Tea greenfield = new Tea("Greenfield", 60, 12, 35,

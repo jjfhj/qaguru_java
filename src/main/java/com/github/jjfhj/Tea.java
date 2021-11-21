@@ -152,6 +152,10 @@ public class Tea {
                 + totalPriceOfTeaSet + " руб.\n");
     }
 
+    public static void sayClassName() {
+        System.out.println(Tea.class.getName() + "\n");
+    }
+
     static class Manufacturer {
         String country;
 
