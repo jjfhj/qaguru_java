@@ -11,10 +11,11 @@ public class Tea {
     private int countOfHerbalTeaBags; // Количество пакетиков травяного чая
     private int countOfOolongTeaBags; // Количество пакетиков чая улун
     private int teaSetPrice; // Цена чайного набора
-    int discountCoupon = 100; // Скидочный купон на 100 рублей
+    private int discountCoupon; // Скидочный купон
+    Manufacturer manufacturer;
 
-    public Tea(String teaSetName, int countOfTeaBags, int countOfTeaFlavors, int countOfBlackTeaBags,
-               int countOfGreenTeaBags, int countOfHerbalTeaBags, int countOfOolongTeaBags, int teaSetPrice) {
+    public Tea(String teaSetName, int countOfTeaBags, int countOfTeaFlavors, int countOfBlackTeaBags, int countOfGreenTeaBags,
+               int countOfHerbalTeaBags, int countOfOolongTeaBags, int teaSetPrice, int discountCoupon) {
         this.teaSetName = teaSetName;
         this.countOfTeaBags = countOfTeaBags;
         this.countOfTeaFlavors = countOfTeaFlavors;
@@ -23,6 +24,7 @@ public class Tea {
         this.countOfHerbalTeaBags = countOfHerbalTeaBags;
         this.countOfOolongTeaBags = countOfOolongTeaBags;
         this.teaSetPrice = teaSetPrice;
+        this.discountCoupon = discountCoupon;
     }
 
     public void sayNameAndCompositionOfTeaSet() {
@@ -39,5 +41,17 @@ public class Tea {
         int totalPriceOfTeaSet = teaSetPrice - discountCoupon;
         System.out.println("Итоговая цена чайного набора " + teaSetName + " со скидкой составляет "
                 + totalPriceOfTeaSet + " руб.");
+    }
+
+    static class Manufacturer {
+        String country;
+
+        public Manufacturer(String country) {
+            this.country = country;
+        }
+
+        public void sayManufacturerCountry() {
+            System.out.println("Производитель: " + country);
+        }
     }
 }
