@@ -12,6 +12,18 @@ public class Tea {
     int teaSetPrice; // Цена чайного набора
     int discountCoupon = 100; // Скидочный купон на 100 рублей
 
+    public Tea(String teaSetName, int countOfTeaBags, int countOfTeaFlavors, int countOfBlackTeaBags,
+               int countOfGreenTeaBags, int countOfHerbalTeaBags, int countOfOolongTeaBags, int teaSetPrice) {
+        this.teaSetName = teaSetName; // Название чайного набора
+        this.countOfTeaBags = countOfTeaBags; // Количество чайных пакетиков
+        this.countOfTeaFlavors = countOfTeaFlavors; // Количество вкусов чая
+        this.countOfBlackTeaBags = countOfBlackTeaBags; // Количество пакетиков черного чая
+        this.countOfGreenTeaBags = countOfGreenTeaBags; // Количество пакетиков зеленого чая
+        this.countOfHerbalTeaBags = countOfHerbalTeaBags; // Количество пакетиков травяного чая
+        this.countOfOolongTeaBags = countOfOolongTeaBags; // Количество пакетиков чая улун
+        this.teaSetPrice = teaSetPrice; // Цена чайного набора
+    }
+
     public void sayNameAndCompositionOfTeaSet() {
         System.out.println("Чайный набор " + teaSetName);
         System.out.println("Количество чайных пакетиков: " + countOfTeaBags);
