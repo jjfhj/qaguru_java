@@ -24,5 +24,13 @@ public class Main {
         ahmadTea.setCountOfGreenTeaBags(-18);
         ahmadTea.manufacturer.sayManufacturerCountry();
         ahmadTea.calculatePriceOfTeaSetWithDiscount();
+
+        Tea curtis = new Tea("Curtis Dessert Tea Collection", 30, 6,
+                15, 15, 0, 0,
+                588, 77);
+        curtis.manufacturer = new Tea.Manufacturer("Россия");
+        curtis.sayNameAndCompositionOfTeaSet();
+        curtis.manufacturer.sayManufacturerCountry();
+        curtis.calculatePriceOfTeaSetWithDiscount();
     }
 }
